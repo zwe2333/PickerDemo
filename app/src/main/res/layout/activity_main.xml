@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pickerdemo.MainActivity">
+    <EditText
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="说些啥"/>
+    <GridView
+        android:layout_marginTop="15dp"
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:numColumns="4"
+        android:verticalSpacing="10dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:columnWidth="70dp"></GridView>
+
+    <ImageView
+        android:id="@+id/btn"
+        android:layout_gravity="center"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/icon_addpic_focused"/>
+</LinearLayout>
